@@ -146,8 +146,6 @@ app.use((err, req, res, next) => {
 app.get(['/'], (req, res) => {
     res.sendFile(view.login);
 });
-
-
 app.get(['/singup'], (req, res) => {
     res.sendFile(view.singup);
 });
