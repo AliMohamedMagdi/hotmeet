@@ -104,7 +104,7 @@ const dir = {
 const view = {
     about: path.join(__dirname, '../../', 'public/view/about.html'),
     login: path.join(__dirname, '../../', 'public/view/login.html'),
-    singup: path.join(__dirname, '../../', 'public/view/singup.html'),
+    signup: path.join(__dirname, '../../', 'public/view/signup.html'),
     client: path.join(__dirname, '../../', 'public/view/client.html'),
     landing: path.join(__dirname, '../../', 'public/view/landing.html'),
     newCall: path.join(__dirname, '../../', 'public/view/newcall.html'),
@@ -146,8 +146,8 @@ app.use((err, req, res, next) => {
 app.get(['/'], (req, res) => {
     res.sendFile(view.login);
 });
-app.get(['/singup'], (req, res) => {
-    res.sendFile(view.singup);
+app.get(['/signup'], (req, res) => {
+    res.sendFile(view.signup);
 });
 
 app.get(['/landing'], (req, res) => {
