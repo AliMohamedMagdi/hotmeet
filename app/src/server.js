@@ -61,9 +61,6 @@ app.post("/signin", async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Server started at port ${port}`));
-
 /////////////////////////////////////////////////////////////////////////////////
 'use strict'; // https://www.w3schools.com/js/js_strict.asp
 
