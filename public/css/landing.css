@@ -79,7 +79,7 @@ dfn {
 }
 
 mark {
-    background-color: #ff0;
+    background-color: #008080 ;
     color: #000;
 }
 
@@ -293,7 +293,7 @@ html {
 
 body {
     /* background: #16171b; */
-    background: linear-gradient(to left, #171717, #000000);
+    background: linear-gradient(to left, #171717, #008080 );
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -420,7 +420,7 @@ html {
 }
 
 body {
-    color: #959cb1;
+    color: #008080 ;
     font-size: 1rem;
 }
 
