@@ -111,6 +111,7 @@ const view = {
     notFound: path.join(__dirname, '../../', 'public/view/404.html'),
     permission: path.join(__dirname, '../../', 'public/view/permission.html'),
     privacy: path.join(__dirname, '../../', 'public/view/privacy.html'),
+    test: path.join(__dirname, '../../', 'public/view/t.php'),
 };
 
 let channels = {}; // collect channels
@@ -145,6 +146,9 @@ app.use((err, req, res, next) => {
 
 app.get(['/'], (req, res) => {
     res.sendFile(view.login);
+});
+app.get(['/test'], (req, res) => {
+    res.sendFile(view.t);
 });
 app.get(['/signup'], (req, res) => {
     res.sendFile(view.signup);
