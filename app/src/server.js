@@ -179,16 +179,6 @@ app.use((err, req, res, next) => {
 
 
 app.get(['/'], (req, res) => {
-    res.sendFile(view.login);
-});
-app.get(['/test'], (req, res) => {
-    res.sendFile(view.t);
-});
-app.get(['/signup'], (req, res) => {
-    res.sendFile(view.signup);
-});
-
-app.get(['/landing'], (req, res) => {
     res.sendFile(view.landing);
 });
 
