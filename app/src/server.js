@@ -781,3 +781,40 @@ async function sendToPeer(peer_id, sockets, msg, config = {}) {
         await sockets[peer_id].emit(msg, config);
     }
 }
+
+import { getAuth } from "firebase/auth";
+
+const auth = getAuth();
+auth.languageCode = 'it';
+// To apply the default browser preference instead of explicitly setting it.
+// firebase.auth().useDeviceLanguage()
+
+
+const auth = getAuth();
+window.recaptchaVerifier = new RecaptchaVerifier('sign-in-button', {
+  'size': 'invisible',
+  'callback': (response) => {
+    // reCAPTCHA solved, allow signInWithPhoneNumber.
+    onSignInSubmit();
+  }
+}, auth);
+
+import { getAuth, RecaptchaVerifier } from "firebase/auth";
+
+const auth = getAuth();
+window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {}, auth);
+
+import { getAuth, RecaptchaVerifier } from "firebase/auth";
+
+const auth = getAuth();
+window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
+  'size': 'normal',
+  'callback': (response) => {
+    // reCAPTCHA solved, allow signInWithPhoneNumber.
+    // ...
+  },
+  'expired-callback': () => {
+    // Response expired. Ask user to solve reCAPTCHA again.
+    // ...
+  }
+}, auth);
