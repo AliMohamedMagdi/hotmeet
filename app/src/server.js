@@ -111,7 +111,7 @@ const view = {
     notFound: path.join(__dirname, '../../', 'public/view/404.html'),
     permission: path.join(__dirname, '../../', 'public/view/permission.html'),
     privacy: path.join(__dirname, '../../', 'public/view/privacy.html'),
-    test: path.join(__dirname, '../../', 'public/view/t.php'),
+    test: path.join(__dirname, '../../', 'public/view/t.html'),
 };
 
 let channels = {}; // collect channels
