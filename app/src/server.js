@@ -148,6 +148,16 @@ app.get(['/'], (req, res) => {
     res.sendFile(view.landing);
 });
 
+app.get(['/login'], (req, res) => {
+    res.sendFile(view.landing);
+});
+
+app.get(['/singup'], (req, res) => {
+    res.sendFile(view.landing);
+});
+
+
+
 // mirotalk about
 app.get(['/about'], (req, res) => {
     res.sendFile(view.about);
