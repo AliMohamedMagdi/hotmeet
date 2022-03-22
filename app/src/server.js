@@ -149,11 +149,11 @@ app.get(['/'], (req, res) => {
 });
 
 app.get(['/login'], (req, res) => {
-    res.sendFile(view.landing);
+    res.sendFile(view.login);
 });
 
-app.get(['/singup'], (req, res) => {
-    res.sendFile(view.landing);
+app.get(['/signup'], (req, res) => {
+    res.sendFile(view.signup);
 });
 
 
